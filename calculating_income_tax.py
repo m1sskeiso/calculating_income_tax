@@ -15,7 +15,12 @@ def calculate_income_tax(taxable_income):
         income_tax = (threshold1 * rate1) + (threshold2 * rate2) + ((taxable_income - threshold2) * rate3)
 
     return income_tax
+
 # Test case
+taxable_income = 45000
+result = calculate_income_tax(taxable_income)
 
 # Print the result
+print(f"For a taxable income of ${taxable_income}, the income tax payable is: ${result:.2f}")
+
 
